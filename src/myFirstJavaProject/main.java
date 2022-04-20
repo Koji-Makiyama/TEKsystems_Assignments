@@ -3,6 +3,7 @@ import java.util.Collection;
 import java.util.ArrayList;
 
 public class main {
+    static String myString = "Hurray";
 	
 	public static void main(String[] args) {
 /*
@@ -23,12 +24,20 @@ public class main {
 		// ERROR from adding two char variables below
 		// char myChar3 = myChar1 + myChar2; "CANNOT CONVERT FROM INT TO CHAR"
 		
-		// NO ERROR from adding two char variables below
+	        // NO ERROR from adding two char variables below
 		System.out.println(myChar1 + myChar2); // prints 97 + 98, i.e. 195
 		
 		if (myChar1 == 120) { System.out.println("True"); }
 		else { System.out.println("False."); }
 */
+
+
+		main myObject = new main();
+                System.out.println(main.myString);
+                myObject.myString = "Updated!!";
+                System.out.println(main.myString);
+        // myObject.newVar = "FLOAT";
+        // System.out.println(myObject.newVar);
 		
 		ArrayList myArr = new ArrayList();
 		myArr.add("one");
